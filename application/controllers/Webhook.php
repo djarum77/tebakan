@@ -23,7 +23,7 @@ class Webhook extends CI_Controller {
 
     // create bot object
     $httpClient = new CurlHTTPClient($_ENV['CHANNEL_ACCESS_TOKEN']);
-    $this->bot  = new LINEBot($httpClient, ['channelSecret' => $_ENV['CHANNEL_SECRET']]);
+    $this->bot  = new LINEBot($httpClient, ['e7bf92aefd3c086789cfe148fa9c1846' => $_ENV['CHANNEL_SECRET']]);
   }
 
   public function index()
